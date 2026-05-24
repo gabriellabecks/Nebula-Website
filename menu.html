@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Nēbula Restaurant & Cocktail Bar</title>
+  <meta name="description" content="Explore the full menu at Nēbula Restaurant & Cocktail Bar, Callao Salvaje, Tenerife. Starters, salads, pizzas, pasta, fish, meats and desserts." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="page-menu">
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="nav" class="subpage-nav scrolled">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        NĒ<span style="color:var(--gold-light)">•</span>BULA
+        <span class="nav-logo-sub">Restaurant &amp; Cocktail Bar</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="current-page">Menu</a></li>
+        <li><a href="cocktails.html">Cocktails</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#reservation" class="nav-reserve"><span>Reserve</span></a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="mobile-menu">
+    <button class="nav-close" id="nav-close">✕ Close</button>
+    <div class="dots" style="margin-bottom:1rem"><span></span><span></span><span></span></div>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="cocktails.html">Cocktails</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#reservation" style="color:var(--gold-light)">Reserve</a>
+  </div>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <header class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-border"></div>
+    <div class="page-header-content container">
+      <div class="section-label fade-up" style="justify-content:center;margin-bottom:1.5rem">
+        <span>The Kitchen</span>
+      </div>
+      <h1 class="page-title fade-up fade-up-delay-1">MENU</h1>
+      <div class="page-title-line fade-up fade-up-delay-2">
+        <span class="page-title-line-rule"></span>
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span class="page-title-line-rule right"></span>
+      </div>
+      <p class="page-subtitle fade-up fade-up-delay-3">
+        Fresh &middot; Seasonal &middot; Crafted with care
+      </p>
+    </div>
+  </header>
+
+  <!-- ===================== CATEGORY NAV ===================== -->
+  <div class="category-nav-wrap" id="category-nav-wrap">
+    <div class="container">
+      <nav class="category-nav" id="category-nav">
+        <a class="cat-link active" data-cat="starters" href="#starters">Starters</a>
+        <a class="cat-link" data-cat="salads" href="#salads">Salads</a>
+        <a class="cat-link" data-cat="fried" href="#fried">Fried Foods</a>
+        <a class="cat-link" data-cat="pizzas" href="#pizzas">Focaccias &amp; Pizzas</a>
+        <a class="cat-link" data-cat="pasta" href="#pasta">Pasta</a>
+        <a class="cat-link" data-cat="rice" href="#rice">Rice Dishes</a>
+        <a class="cat-link" data-cat="fish" href="#fish">Fish</a>
+        <a class="cat-link" data-cat="meats" href="#meats">Meats</a>
+        <a class="cat-link" data-cat="desserts" href="#desserts">Desserts</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===================== MENU BODY ===================== -->
+  <main class="menu-body">
+    <div class="container">
+
+      <!-- Search -->
+      <div class="menu-search-wrap">
+        <div class="menu-search-wrap-inner">
+          <span class="menu-search-icon">⌕</span>
+          <input
+            type="text"
+            class="menu-search"
+            id="menu-search"
+            placeholder="Search the menu…"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+
+      <!-- ── STARTERS ── -->
+      <section class="menu-section" id="starters" data-category="starters">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Starters</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Soup of the Day</div>
+                <div class="menu-row-desc">Chef's seasonal soup, served with crusty bread</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Bread &amp; Garlic Butter</div>
+                <div class="menu-row-desc">Toasted house bread, roasted garlic herb butter</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Spanish Omelette</div>
+                <div class="menu-row-desc">Traditional tortilla española, dressed salad garnish</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Patatas Bravas</div>
+                <div class="menu-row-desc">Crispy potatoes, spicy tomato sauce, alioli</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Mushrooms on Toast</div>
+                <div class="menu-row-desc">Sautéed garlic mushrooms, thyme, toasted sourdough</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Mixed Olives</div>
+                <div class="menu-row-desc">Marinated in lemon zest, herbs and chilli</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Pan con Tomate</div>
+                <div class="menu-row-desc">Toasted bread, grated fresh tomato, extra virgin olive oil</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Serrano Ham &amp; Cheese</div>
+                <div class="menu-row-desc">Cured Serrano ham, manchego, quince jelly, toasted bread</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Chicken Satay</div>
+                <div class="menu-row-desc">Grilled chicken skewers, peanut sauce, cucumber, spring onion</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Chicken Wings</div>
+                <div class="menu-row-desc">Marinated wings, choice of BBQ or hot sauce</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SALADS ── -->
+      <section class="menu-section" id="salads" data-category="salads">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Salads</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Tuna Salad</div>
+                <div class="menu-row-desc">Tuna, mixed leaves, olives, tomato, red onion, boiled egg, house dressing</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Goat's Cheese Salad</div>
+                <div class="menu-row-desc">Warm goat's cheese, candied walnut, beetroot, honey balsamic dressing</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Caesar Salad</div>
+                <div class="menu-row-desc">Romaine lettuce, parmesan shavings, croutons, house Caesar dressing</div>
+                <div class="menu-row-note">Add grilled chicken</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Mixed Green Salad</div>
+                <div class="menu-row-desc">Seasonal leaves, cherry tomatoes, cucumber, red onion, vinaigrette</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FRIED FOODS ── -->
+      <section class="menu-section" id="fried" data-category="fried">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Fried Foods</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Calamari</div>
+                <div class="menu-row-desc">Fried squid rings, tartar sauce, lemon wedge</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Fish &amp; Chips</div>
+                <div class="menu-row-desc">Battered Atlantic cod, hand-cut fries, tartar sauce, mushy peas</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Vegetable Tempura</div>
+                <div class="menu-row-desc">Seasonal vegetables in tempura batter, sweet chilli dipping sauce</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Crispy Chicken Strips</div>
+                <div class="menu-row-desc">Buttermilk fried chicken tenders, honey mustard sauce</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Mozzarella Sticks</div>
+                <div class="menu-row-desc">Breaded mozzarella, warm marinara dipping sauce</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Onion Rings</div>
+                <div class="menu-row-desc">Beer-battered onion rings, chipotle mayo</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Cheesy Jalapeño Bites</div>
+                <div class="menu-row-desc">Cream cheese filled, crispy crumb, sriracha mayo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /container split 1 -->
+
+    <!-- Fresh from the kitchen label -->
+    <div class="menu-photo-label" style="padding:2rem 2rem;background:#F0EBE0;margin:2rem 0;text-align:center">
+      <h4>Fresh from the Kitchen</h4>
+      <p>Every dish is made with passion using the finest seasonal ingredients sourced from across Tenerife.</p>
+    </div>
+
+    <div class="container">
+
+      <!-- ── FOCACCIAS & PIZZAS ── -->
+      <section class="menu-section" id="pizzas" data-category="pizzas">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Focaccias &amp; Pizzas</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Margherita</div>
+                <div class="menu-row-desc">Tomato sauce, mozzarella, fresh basil, olive oil</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Pepperoni</div>
+                <div class="menu-row-desc">Tomato sauce, mozzarella, spicy pepperoni</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Nēbula Special</div>
+                <div class="menu-row-desc">Tomato, mozzarella, ham, mushrooms, peppers, black olives</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Vegetariana</div>
+                <div class="menu-row-desc">Tomato, mozzarella, mixed peppers, red onion, courgette, olives</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Ham &amp; Cheese Focaccia</div>
+                <div class="menu-row-desc">Open-baked focaccia bread, Serrano ham, manchego, tomato</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Capricciosa</div>
+                <div class="menu-row-desc">Tomato, mozzarella, artichoke hearts, ham, mushrooms, black olives</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Four Cheese</div>
+                <div class="menu-row-desc">Mozzarella, gorgonzola, parmesan, goat's cheese, honey drizzle</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">BBQ Chicken</div>
+                <div class="menu-row-desc">BBQ sauce base, chicken, red onion, mozzarella, fresh coriander</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PASTA ── -->
+      <section class="menu-section" id="pasta" data-category="pasta">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Pasta</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Spaghetti Bolognaise</div>
+                <div class="menu-row-desc">Slow-cooked beef ragu, fresh tomato, parmesan, basil</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Spaghetti Carbonara</div>
+                <div class="menu-row-desc">Pancetta, egg yolk, pecorino romano, cracked black pepper</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Penne Arrabbiata</div>
+                <div class="menu-row-desc">Spicy tomato, garlic, capers, fresh basil, parmesan</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Pasta Napolitana</div>
+                <div class="menu-row-desc">Fresh tomato sauce, garlic, oregano, parmesan</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Lasagne al Forno</div>
+                <div class="menu-row-desc">Beef ragu, béchamel, pasta sheets, mozzarella, served with salad</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Pasta Primavera</div>
+                <div class="menu-row-desc">Seasonal vegetables, cream, garlic, parmesan — vegetarian</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── RICE DISHES ── -->
+      <section class="menu-section" id="rice" data-category="rice">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Rice Dishes</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Vegetable Paella</div>
+                <div class="menu-row-desc">Seasonal vegetables, saffron rice, rosemary, alioli</div>
+                <div class="menu-row-note">Minimum 2 persons</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Seafood Paella</div>
+                <div class="menu-row-desc">Mixed Atlantic seafood, saffron rice, lemon, alioli</div>
+                <div class="menu-row-note">Minimum 2 persons</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Mixed Paella</div>
+                <div class="menu-row-desc">Chicken, mixed seafood, saffron rice, alioli</div>
+                <div class="menu-row-note">Minimum 2 persons</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Chicken &amp; Chorizo Rice</div>
+                <div class="menu-row-desc">Sautéed with peppers, smoked paprika, saffron broth</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /container split 2 -->
+
+    <!-- Photo strip: from land and sea -->
+    <div class="menu-photo-strip">
+      <img
+        src="brand_assets/Food_pictures/9lmqAFMw.jpeg"
+        alt="Nēbula perfectly grilled steak"
+        loading="lazy"
+      />
+      <div class="menu-photo-label">
+        <h4>From Land &amp; Sea</h4>
+        <p>Our chefs bring precision and care to every main — whether it's from the ocean or the grill.</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- ── FISH ── -->
+      <section class="menu-section" id="fish" data-category="fish">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Fish</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Grilled Sea Bass</div>
+                <div class="menu-row-desc">With lemon butter, capers, seasonal vegetables</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Tuna Steak</div>
+                <div class="menu-row-desc">Grilled, sesame and soy glaze, vegetable stir-fry, lime</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Salmon Fillet</div>
+                <div class="menu-row-desc">Pan-fried, dill cream sauce, new potatoes, wilted spinach</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">King Prawns</div>
+                <div class="menu-row-desc">In garlic butter and white wine, grilled, fresh parsley, crusty bread</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Baked Hake</div>
+                <div class="menu-row-desc">Herb crust, lemon oil, potato and vegetable medley</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Swordfish Steak</div>
+                <div class="menu-row-desc">Grilled, salsa verde, charred lemon, herb oil</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── MEATS ── -->
+      <section class="menu-section" id="meats" data-category="meats">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Meats</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Chicken Breast</div>
+                <div class="menu-row-desc">Grilled, choice of sauce: peppercorn, garlic butter or mushroom</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">BBQ Pork Ribs</div>
+                <div class="menu-row-desc">Slow-cooked half rack, BBQ glaze, coleslaw, fries</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Sirloin Steak 200g</div>
+                <div class="menu-row-desc">Grilled to order, peppercorn or béarnaise sauce, seasonal vegetables</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Chicken Tikka Masala</div>
+                <div class="menu-row-desc">Classic spiced curry sauce, basmati rice, naan bread</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Classic Burger</div>
+                <div class="menu-row-desc">Beef patty, lettuce, tomato, pickles, cheese, chips</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Lamb Chops</div>
+                <div class="menu-row-desc">Grilled, rosemary and garlic jus, roasted potatoes</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Mixed Grill</div>
+                <div class="menu-row-desc">Chicken, pork loin, beef, sausage, chips, salad and sauces</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">T-Bone Steak 350g</div>
+                <div class="menu-row-desc">Grilled to order, herb butter, fries, seasonal vegetables</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── DESSERTS ── -->
+      <section class="menu-section" id="desserts" data-category="desserts">
+        <div class="menu-section-header">
+          <h2 class="menu-section-name">Desserts</h2>
+        </div>
+        <div class="menu-two-col">
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Tiramisu</div>
+                <div class="menu-row-desc">Classic Italian — espresso-soaked sponge, mascarpone cream, cocoa</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">New York Cheesecake</div>
+                <div class="menu-row-desc">Baked vanilla cheesecake, berry coulis, whipped cream</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Chocolate Brownie</div>
+                <div class="menu-row-desc">Warm, served with vanilla ice cream and chocolate sauce</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col" data-col>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Crème Caramel</div>
+                <div class="menu-row-desc">Traditional Spanish flan, smooth caramel sauce</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Ice Cream</div>
+                <div class="menu-row-desc">3 scoops of your choice — ask for today's flavours</div>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-info">
+                <div class="menu-row-name">Profiteroles</div>
+                <div class="menu-row-desc">Choux pastry filled with cream, warm chocolate sauce</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">NĒBULA</div>
+          <div class="footer-logo-sub">Restaurant &amp; Cocktail Bar</div>
+          <p>An approachable luxury dining and cocktail experience in the heart of Callao Salvaje, Tenerife. Est. 2017.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cocktails.html">Cocktails</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#reservation">Reserve</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <p>Monday to Sunday<br>12:00 – 24:00 hours</p>
+          <h4 style="margin-top:1.5rem">Address</h4>
+          <p>Calle El Jable 45<br>38679 Callao Salvaje<br>Tenerife, Spain</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nēbula Restaurant &amp; Cocktail Bar. All rights reserved.</p>
+        <div class="footer-dots"><span></span><span></span><span></span></div>
+        <p>+34 922 04 63 98 &nbsp;·&nbsp; callao.nebula@hotmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Menu-specific JS
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // --- Search filter ---
+      const searchInput = document.getElementById('menu-search');
+      searchInput.addEventListener('input', () => {
+        const q = searchInput.value.toLowerCase().trim();
+        document.querySelectorAll('.menu-row').forEach(row => {
+          const text = row.textContent.toLowerCase();
+          if (q === '' || text.includes(q)) {
+            row.classList.remove('hidden');
+            row.classList.add('visible');
+          } else {
+            row.classList.add('hidden');
+          }
+        });
+        // Show/hide empty section messages
+        document.querySelectorAll('.menu-section').forEach(section => {
+          const visible = section.querySelectorAll('.menu-row:not(.hidden)').length > 0;
+          section.style.display = visible ? '' : 'none';
+        });
+      });
+
+      // --- Category nav active + sticky ---
+      const catNavWrap = document.getElementById('category-nav-wrap');
+      const sections   = document.querySelectorAll('.menu-section[data-category]');
+      const catLinks   = document.querySelectorAll('.cat-link');
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const cat = entry.target.dataset.category;
+            catLinks.forEach(l => l.classList.toggle('active', l.dataset.cat === cat));
+          }
+        });
+      }, { threshold: 0.25, rootMargin: '-80px 0px -60% 0px' });
+
+      sections.forEach(s => sectionObserver.observe(s));
+
+      // Smooth scroll on cat link click
+      catLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          if (target) {
+            const offset = catNavWrap.getBoundingClientRect().height + 72;
+            const y = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Elevated shadow on scroll
+      window.addEventListener('scroll', () => {
+        catNavWrap.classList.toggle('elevated', window.scrollY > 200);
+      }, { passive: true });
+
+      // --- Section line-draw + item stagger ---
+      const lineObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const title = entry.target.querySelector('.menu-section-name');
+            title?.classList.add('line-drawn');
+
+            // Stagger menu items
+            const rows = entry.target.querySelectorAll('.menu-row');
+            rows.forEach((row, i) => {
+              setTimeout(() => row.classList.add('visible'), 60 + i * 55);
+            });
+          }
+        });
+      }, { threshold: 0.1 });
+
+      sections.forEach(s => lineObserver.observe(s));
+    });
+  </script>
+</body>
+</html>

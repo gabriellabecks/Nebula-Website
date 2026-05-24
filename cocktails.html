@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocktails — Nēbula Restaurant & Cocktail Bar</title>
+  <meta name="description" content="Explore the full cocktail menu at Nēbula in Callao Salvaje, Tenerife — signature cocktails and dessert cocktails crafted by World Champion Bartender Eduardo." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="page-cocktails">
+
+  <!-- Animated liquid background -->
+  <div class="cocktail-liquid-bg">
+    <div class="cocktail-liquid-blob blob-1"></div>
+    <div class="cocktail-liquid-blob blob-2"></div>
+    <div class="cocktail-liquid-blob blob-3"></div>
+  </div>
+
+  <!-- Particle canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="nav" class="subpage-nav scrolled">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        NĒ<span style="color:var(--gold-light)">•</span>BULA
+        <span class="nav-logo-sub">Restaurant &amp; Cocktail Bar</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cocktails.html" class="current-page">Cocktails</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#reservation" class="nav-reserve"><span>Reserve</span></a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="mobile-menu">
+    <button class="nav-close" id="nav-close">✕ Close</button>
+    <div class="dots" style="margin-bottom:1rem"><span></span><span></span><span></span></div>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="cocktails.html">Cocktails</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#reservation" style="color:var(--gold-light)">Reserve</a>
+  </div>
+
+  <!-- ===================== COCKTAIL CONTENT ===================== -->
+  <div class="cocktail-content">
+
+    <!-- Page Header -->
+    <header class="page-header" style="padding-bottom:3rem">
+      <div class="page-header-bg"></div>
+      <div class="page-header-border"></div>
+      <div class="page-header-content container">
+        <div class="section-label fade-up" style="justify-content:center;margin-bottom:1.5rem">
+          <span>The Bar</span>
+        </div>
+        <h1 class="page-title fade-up fade-up-delay-1">COCKTAILS</h1>
+        <div class="page-title-line fade-up fade-up-delay-2">
+          <span class="page-title-line-rule"></span>
+          <div class="dots"><span></span><span></span><span></span></div>
+          <span class="page-title-line-rule right"></span>
+        </div>
+        <p class="page-subtitle fade-up fade-up-delay-3">
+          Crafted by World Champion Bartender &nbsp;·&nbsp; Eduardo
+        </p>
+      </div>
+    </header>
+
+    <!-- Intro text -->
+    <div class="container">
+      <div class="cocktail-intro fade-up">
+        <p>
+          We offer all of the classic cocktails such as Mojitos, Piña Coladas, Daiquiris
+          and Margaritas, but if you wish to try something different, just ask our
+          bartender to prepare a special cocktail for you too.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===================== COCKTAIL MENU LIST ===================== -->
+    <section class="cocktail-list-section">
+      <div class="container">
+
+        <!-- Classic Cocktails -->
+        <div class="cocktail-list-block fade-up">
+          <div class="section-label" style="justify-content:center;margin-bottom:1rem"><span>Classic Cocktails</span></div>
+          <ul class="cocktail-name-list">
+            <li>Mojito</li>
+            <li>Piña Colada</li>
+            <li>Daiquiri</li>
+            <li>Margarita</li>
+            <li>Bramble</li>
+            <li>Nēbula Mai Tai</li>
+            <li>Whiskey Sour</li>
+            <li>Pornstar Martini</li>
+            <li>Walking Zombie</li>
+            <li>Cosmopolitan</li>
+            <li>Espresso Martini</li>
+            <li>Negroni</li>
+            <li>Aperol Spritz</li>
+            <li>Long Island Iced Tea</li>
+          </ul>
+        </div>
+
+        <!-- Photo row -->
+        <div class="cocktail-list-photos fade-up" style="grid-template-columns:1fr;max-width:480px">
+          <div class="cocktail-list-photo-frame" style="height:480px">
+            <img src="brand_assets/Food_pictures/UF2xiHGw.jpeg" alt="Nēbula signature cocktails" loading="lazy" style="object-position: center 60%" />
+          </div>
+        </div>
+
+        <!-- Dessert Cocktails -->
+        <div class="cocktail-list-block fade-up">
+          <div class="section-label" style="justify-content:center;margin-bottom:1rem"><span>Dessert Cocktails</span></div>
+          <ul class="cocktail-name-list">
+            <li>FBI</li>
+            <li>Piña Colada</li>
+            <li>Strawberry Shortcake</li>
+            <li>Banana Banshee</li>
+            <li>Frozen Irish Mint</li>
+            <li>Chocolate Orange</li>
+            <li>Nutty Irishman</li>
+            <li>Caribbean Cooler</li>
+            <li>Brandy Alexander</li>
+          </ul>
+        </div>
+
+        <p class="dessert-footer-note" style="margin-top:3rem">
+          We also make any cocktail to your liking — just ask Eduardo or our team.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div style="text-align:center;padding:4rem 0 8rem;position:relative;z-index:1">
+      <a href="index.html#reservation" class="btn btn-gold"><span>Reserve a Table</span></a>
+    </div>
+
+  </div><!-- /cocktail-content -->
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="position:relative;z-index:1">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">NĒBULA</div>
+          <div class="footer-logo-sub">Restaurant &amp; Cocktail Bar</div>
+          <p>An approachable luxury dining and cocktail experience in the heart of Callao Salvaje, Tenerife. Est. 2017.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cocktails.html">Cocktails</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#reservation">Reserve</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <p>Monday to Sunday<br>12:00 – 24:00 hours</p>
+          <h4 style="margin-top:1.5rem">Contact Us</h4>
+          <p>
+            <a href="tel:+34922046398" style="color:rgba(255,255,255,0.45)">+34 922 04 63 98</a><br>
+            <a href="mailto:callao.nebula@hotmail.com" style="color:rgba(255,255,255,0.45)">callao.nebula@hotmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nēbula Restaurant &amp; Cocktail Bar. All rights reserved.</p>
+        <div class="footer-dots"><span></span><span></span><span></span></div>
+        <div class="contact-social" style="margin-top:0">
+          <a href="https://www.instagram.com/nebula_callao_salvaje" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">IG</a>
+          <a href="https://wa.me/34922046398" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">WA</a>
+          <a href="mailto:callao.nebula@hotmail.com" class="social-link" aria-label="Email">EM</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // ── Particle system ──
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resize() {
+      canvas.width  = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize, { passive: true });
+
+    function makeParticle() {
+      const isGold = Math.random() > 0.65;
+      return {
+        x:       Math.random() * canvas.width,
+        y:       canvas.height + Math.random() * 80,
+        r:       Math.random() * 1.8 + 0.3,
+        speed:   Math.random() * 0.4 + 0.15,
+        opacity: Math.random() * 0.25 + 0.04,
+        color:   isGold ? '#D4A83A' : '#FFFFFF',
+        drift:   (Math.random() - 0.5) * 0.25,
+        life:    1
+      };
+    }
+
+    for (let i = 0; i < 70; i++) {
+      const p = makeParticle();
+      p.y = Math.random() * canvas.height; // spread on init
+      particles.push(p);
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p, i) => {
+        p.y     -= p.speed;
+        p.x     += p.drift;
+        const fade = p.y / canvas.height;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.opacity * fade;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        if (p.y < -5) particles[i] = makeParticle();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // ── 3D tilt on signature cards ──
+    document.querySelectorAll('.sig-card').forEach(card => {
+      const shine = card.querySelector('.sig-card-shine');
+
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const cx = rect.width  / 2;
+        const cy = rect.height / 2;
+        const rotX = -((y - cy) / cy) * 5;
+        const rotY =  ((x - cx) / cx) * 5;
+
+        card.style.transform = `perspective(1200px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.01)`;
+
+        if (shine) {
+          const sx = (x / rect.width)  * 100;
+          const sy = (y / rect.height) * 100;
+          shine.style.background =
+            `radial-gradient(circle at ${sx}% ${sy}%, rgba(255,255,255,0.07) 0%, transparent 55%)`;
+        }
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1200px) rotateX(0) rotateY(0) scale(1)';
+        if (shine) shine.style.background = 'transparent';
+      });
+    });
+
+    // ── Scroll reveal for sig cards ──
+    const sigObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('revealed');
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.sig-card').forEach(c => sigObserver.observe(c));
+
+    // ── Stagger reveal for dessert cards ──
+    const dessertObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const cards = entry.target.querySelectorAll('.dessert-card');
+          cards.forEach((card, i) => {
+            setTimeout(() => card.classList.add('visible'), i * 80);
+          });
+          dessertObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const dessertGrid = document.querySelector('.dessert-grid');
+    if (dessertGrid) dessertObserver.observe(dessertGrid);
+
+  });
+  </script>
+</body>
+</html>
