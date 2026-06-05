@@ -4,7 +4,7 @@
    ========================================= */
 
 /* --- Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
 
 /* --- CSS Variables --- */
 :root {
@@ -21,7 +21,7 @@
   --text-muted: rgba(255,255,255,0.55);
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans:  'Poppins', sans-serif;
+  --font-sans:  'DM Sans', sans-serif;
 
   --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --transition-fast: 0.2s ease;
@@ -200,6 +200,11 @@ ul { list-style: none; }
   line-height: 1;
 }
 
+.nav-logo-name {
+  white-space: nowrap;
+  display: block;
+}
+
 .nav-logo-sub {
   font-family: var(--font-sans);
   font-size: 0.52rem;
@@ -244,11 +249,11 @@ ul { list-style: none; }
 
 .nav-reserve {
   font-family: var(--font-sans);
-  font-size: 0.65rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  padding: 0.65rem 1.4rem;
+  padding: 0.8rem 1.8rem;
   border: 1px solid var(--gold);
   color: var(--gold);
   transition: var(--transition);
@@ -436,9 +441,9 @@ ul { list-style: none; }
 
 .hero-tagline {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.7);
   margin-top: -0.5rem;
@@ -452,9 +457,9 @@ ul { list-style: none; }
 
 .hero-subtitle {
   font-family: var(--font-sans);
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.35em;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.5);
 }
@@ -1378,20 +1383,20 @@ ul { list-style: none; }
 
 .contact-detail-text .label {
   font-family: var(--font-sans);
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.35);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
 }
 
 .contact-detail-text .value {
-  font-family: var(--font-serif);
-  font-size: 1rem;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--white);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .contact-detail-text a {
@@ -1408,9 +1413,9 @@ ul { list-style: none; }
 
 .hours-title {
   font-family: var(--font-sans);
-  font-size: 0.65rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.35);
   margin-bottom: 1rem;
@@ -1425,15 +1430,15 @@ ul { list-style: none; }
 
 .hours-row .day {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: rgba(255,255,255,0.55);
 }
 
 .hours-row .time {
-  font-family: var(--font-serif);
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--white);
 }
 
@@ -2443,6 +2448,15 @@ body.page-cocktails {
   .nav-hamburger { display: flex; }
 
   .hero-name { font-size: clamp(3.5rem, 18vw, 7rem); }
+  .hero-tagline { font-size: 0.85rem; letter-spacing: 0.15em; }
+  .hero-subtitle { font-size: 0.75rem; letter-spacing: 0.15em; }
+  .hero-border { inset: 0.75rem; }
+
+  .lt-section,
+  .lt-section-cream,
+  .lt-section-dark { padding: 5rem 0; }
+  #reservation     { padding: 6rem 0; }
+  #gallery         { padding-top: 4rem; padding-bottom: 4rem; }
 
   .cocktails-cards { grid-template-columns: 1fr; }
   .cocktails-header { grid-template-columns: 1fr; }
@@ -2457,15 +2471,19 @@ body.page-cocktails {
 
   .footer-top { grid-template-columns: 1fr; }
   .footer-brand { grid-column: 1; }
-
   .footer-bottom { flex-direction: column; text-align: center; }
-
-  .hero-border { inset: 0.75rem; }
 
   .about-stats { grid-template-columns: 1fr 1fr; }
 
   .menu-tabs { width: 100%; }
   .menu-tab { flex: 1; padding: 0.85rem 1rem; }
+
+  /* Video section */
+  #videos .container:first-child { margin-bottom: 2.5rem; }
+  .phone-caption-title { font-size: 1.1rem; }
+
+  /* Contact detail text */
+  .contact-detail-text .value { font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
@@ -2473,6 +2491,26 @@ body.page-cocktails {
   .gallery-item:nth-child(1) { grid-column: 1; }
   .experience-grid { grid-template-columns: 1fr; }
   .experience-item { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.07); }
+
+  /* Map overlay — stack location + button vertically */
+  .map-location-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  /* Hero */
+  .hero-cta { flex-direction: column; align-items: center; }
+  .hero-cta .btn { width: 100%; max-width: 280px; justify-content: center; }
+
+  /* About stats — single column on very small */
+  .about-stat .num { font-size: 2.2rem; }
+
+  /* Feature row text padding */
+  .lt-feature-text { padding: 2.5rem 1.5rem; }
+
+  /* Section titles */
+  .section-title { font-size: clamp(2rem, 9vw, 2.8rem); }
 }
 
 /* --- Menu & Cocktails page responsive --- */
@@ -2521,7 +2559,7 @@ body.page-light #nav.scrolled {
 }
 body.page-light #nav.scrolled .nav-logo     { color: #17150F; }
 body.page-light #nav.scrolled .nav-logo-sub { color: rgba(23,21,15,0.4); }
-body.page-light #nav.scrolled .nav-links a  { color: rgba(23,21,15,0.55); }
+body.page-light #nav.scrolled .nav-links a  { color: rgba(23,21,15,0.75); }
 body.page-light #nav.scrolled .nav-links a:hover,
 body.page-light #nav.scrolled .nav-links a.active { color: #17150F; }
 body.page-light #nav.scrolled .nav-reserve  { color: var(--gold); border-color: var(--gold); }
@@ -2564,7 +2602,7 @@ body.page-light .announce-bar {
   background: #F0EBE0;
   border-color: rgba(184,145,46,0.2);
 }
-body.page-light .announce-item { color: rgba(23,21,15,0.5); }
+body.page-light .announce-item { color: rgba(23,21,15,0.72); }
 
 /* --- Generic light sections --- */
 .lt-section {
@@ -2797,7 +2835,7 @@ body.page-light .lt-top-rule {
 
 /* --- Stats in light --- */
 body.page-light .about-stat .num   { color: var(--gold); }
-body.page-light .about-stat .label { color: rgba(23,21,15,0.45); }
+body.page-light .about-stat .label { color: rgba(23,21,15,0.75); }
 body.page-light .about-stats       { border-color: rgba(23,21,15,0.08); }
 
 /* --- btn variants for light pages --- */
@@ -2820,8 +2858,15 @@ body.page-light .about-stats       { border-color: rgba(23,21,15,0.08); }
 @media (max-width: 640px) {
   .lt-gallery-grid        { grid-template-columns: 1fr 1fr; }
   .lt-gallery-item.wide   { grid-column: span 2; }
+  .lt-gallery-img         { height: 180px; }
+  .lt-gallery-item.wide .lt-gallery-img { height: 220px; }
+}
+
+@media (max-width: 400px) {
+  .lt-gallery-grid        { grid-template-columns: 1fr; }
+  .lt-gallery-item.wide   { grid-column: span 1; }
   .lt-gallery-img         { height: 200px; }
-  .lt-gallery-item.wide .lt-gallery-img { height: 240px; }
+  .lt-gallery-item.wide .lt-gallery-img { height: 200px; }
 }
 
 /* =========================================
@@ -3295,17 +3340,17 @@ body.page-cocktails .dessert-card-desc      { color: rgba(23,21,15,0.75); }
 
 .phone-caption-title {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: rgba(255,255,255,0.8);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
 }
 
 .phone-caption-sub {
   font-family: var(--font-sans);
-  font-size: 0.58rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.28);
 }
@@ -3492,9 +3537,10 @@ body.page-light .contact-beige .contact-detail-text .label {
 .contact-beige .contact-detail-text .value,
 body.page-light .contact-beige .contact-detail-text .value,
 body.page-light .lt-section-dark.contact-beige .contact-detail-text .value {
+  font-family: var(--font-sans);
   color: #17150F !important;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .contact-beige .contact-detail a,
 body.page-light .contact-beige .contact-detail a,
@@ -3511,10 +3557,10 @@ body.page-light .contact-beige .hours-row,
 body.page-light .lt-section-dark.contact-beige .hours-row  { border-color: rgba(23,21,15,0.08); }
 .contact-beige .hours-row .day,
 body.page-light .contact-beige .hours-row .day,
-body.page-light .lt-section-dark.contact-beige .hours-row .day  { color: rgba(23,21,15,0.65) !important; font-size: 0.85rem; }
+body.page-light .lt-section-dark.contact-beige .hours-row .day  { color: rgba(23,21,15,0.65) !important; font-size: 0.95rem; }
 .contact-beige .hours-row .time,
 body.page-light .contact-beige .hours-row .time,
-body.page-light .lt-section-dark.contact-beige .hours-row .time { color: #17150F !important; font-size: 0.85rem; font-weight: 600; }
+body.page-light .lt-section-dark.contact-beige .hours-row .time { font-family: var(--font-sans); color: #17150F !important; font-size: 1rem; font-weight: 600; }
 .contact-beige .social-link           { border-color: rgba(23,21,15,0.2); color: rgba(23,21,15,0.5); }
 .contact-beige .social-link:hover     { border-color: var(--orange); color: var(--orange); }
 .contact-beige .map-cta               { background: var(--orange); }
@@ -3522,6 +3568,8 @@ body.page-light .lt-section-dark.contact-beige .hours-row .time { color: #17150F
 @media (max-width: 768px) {
   .contact-beige .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
   .contact-beige .contact-detail-text .value { font-size: 1rem; }
+  .contact-beige { padding: 5rem 0; }
+  .map-location-bottom-row { flex-wrap: wrap; gap: 0.75rem; }
 }
 
 /* ===================== MINIMAL FOOTER ===================== */
@@ -3555,7 +3603,7 @@ body.page-cocktails .page-title {
 
 /* Phone captions on white section background */
 .lt-section .phone-caption-title { color: #17150F; }
-.lt-section .phone-caption-sub   { color: rgba(23,21,15,0.42); }
+.lt-section .phone-caption-sub   { color: rgba(23,21,15,0.7); }
 
 /* Contact section — Callao Salvaje location image map */
 .map-location-img {
@@ -3582,11 +3630,18 @@ body.page-cocktails .page-title {
   inset: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-end;
-  padding: 2rem;
-  background: linear-gradient(to top, rgba(23,21,15,0.72) 0%, transparent 55%);
-  text-align: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to top, rgba(23,21,15,0.78) 0%, transparent 55%);
+}
+
+.map-location-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .map-location-pin {
@@ -3596,12 +3651,11 @@ body.page-cocktails .page-title {
 }
 
 .map-location-label {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: rgba(255,255,255,0.88);
-  letter-spacing: 0.06em;
-  margin-bottom: 1.2rem;
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.95);
+  letter-spacing: 0.02em;
   text-shadow: 0 1px 6px rgba(0,0,0,0.5);
 }
 
@@ -3609,12 +3663,13 @@ body.page-cocktails .page-title {
   background: var(--orange);
   color: #fff;
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 0.55rem 1.4rem;
+  padding: 0.65rem 1.5rem;
   border-radius: 2px;
+  white-space: nowrap;
   transition: background 0.25s ease, transform 0.25s ease;
 }
 
